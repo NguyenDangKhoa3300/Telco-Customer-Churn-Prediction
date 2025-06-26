@@ -1,0 +1,10 @@
+streamlit
+pandas
+scikit-learn
+xgboost
+imblearn
+matplotlib
+shap
+joblib
+psycopg2-binary
+sqlalchemy
