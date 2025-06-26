@@ -12,7 +12,7 @@ st.title("📊 Telco Customer Churn Prediction & SHAP Explanation")
 st.markdown("Nhập thông tin khách hàng để dự đoán khả năng **churn** và giải thích bằng SHAP.")
 
 # ==== Load mô hình và preprocessor ====
-pipeline, feature_names = joblib.load("D:\\Self Study\\Python\\Data Science\\Machine Learning\\Supervised machine learning\\Telco Customer Churn\\churn_model.pkl")
+pipeline, feature_names = joblib.load("churn_model.pkl")
 preprocessor = pipeline.named_steps['processor']
 model = pipeline.named_steps['classifier']
 explainer = shap.Explainer(model)
